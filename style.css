@@ -1,0 +1,66 @@
+/* 
+- White: hsl(0, 0%, 100%)
+- Light gray: hsl(212, 45%, 89%)
+- Grayish blue: hsl(220, 15%, 55%)
+- Dark blue: hsl(218, 44%, 22%)
+
+Font size (paragraph): 15px
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-lt-gray: hsl(212, 45%, 89%);
+  --color-grayish-blue: hsl(220, 15%, 55%);
+  --color-dk-blue: hsl(218, 44%, 22%);
+
+  --font-size-h: 15px;
+  --font-size-p: 12px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-lt-gray);
+  flex-direction: column;
+}
+
+.card {
+  background: var(--color-white);
+  padding: 15px;
+  border-radius: 10px;
+  width: 200px;
+}
+
+.card__text {
+  margin-top: 15px;
+}
+.card__img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card__heading {
+  font-size: var(--font-size-h);
+  text-align: center;
+}
+
+.card__body {
+  font-size: var(--font-size-p);
+  text-align: center;
+  margin: 10px auto;
+  font-weight: 400;
+}
+
+.attribution {
+  margin-top: 20px;
+}
